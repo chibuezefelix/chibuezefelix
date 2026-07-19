@@ -54,13 +54,6 @@ I maintain and contribute to libraries focused on improving developer experience
 
 ---
 
-## GitHub Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chibuezefelix&layout=compact)
-
-![Stats](https://github-readme-stats.vercel.app/api?username=chibuezefelix&show_icons=true&count_private=true)
-
----
 
 ## Want to collaborate?
 
