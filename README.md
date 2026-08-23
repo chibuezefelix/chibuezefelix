@@ -1,6 +1,6 @@
 # Hi, I'm Chibueze Felix 👋
 
-Mobile & Open Source Engineer — I build production-ready mobile apps, Android libraries, and developer tooling. I enjoy creating clean, well-tested solutions and contributing to the Flutter / Android ecosystems.
+A hybrid engineer who builds robust server-side logic and smooth mobile applications
 
 - 🔭 Current: Maintaining several open-source libraries and building reusable Flutter tooling
 - 👩‍💻 I work with:Go, Java, KMP, Jetpack Compose, Android, Flutter, Dart, Kotlin,  iOS (Swift), JavaScript
