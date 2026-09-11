@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+  One-page site, so one URL. Anchors like #projects are not separate URLs and
+  should not be listed here — Google treats them as the same page.
+  Update <lastmod> whenever you change the page content.
+  If you later add real article pages, add a <url> block for each one.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://chibuezefelix.vercel.app/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
