@@ -1,0 +1,34 @@
+# Chibueze Felix Anyanwu
+
+> Senior Software/ Android engineer with 7+ years building fintech, EMV payment, POS,Springboot Micro-services, AI-powered, 
+> Distributed Micro services and enterprise mobile applications. Kotlin, Jetpack Compose, Flutter, Java, Spring Boot, Go.
+> Available for senior engineering roles and contract work, remote worldwide.
+
+## Summary
+
+Chibueze Felix Anyanwu (also written Chibueze Felix) is a senior mobile engineer whose work
+centres on payments: EMV contact and contactless flows, NFC, POS terminal SDKs, offline
+transaction queuing and the consumer fintech apps built on top of them. He also builds Go and
+Spring Boot services, and adds LLM-backed features to mobile products.
+
+## Contact
+
+- Email: YOUR-EMAIL@example.com
+- Website: https://chibuezefelix.vercel.app/
+- GitHub: https://github.com/YOUR-GITHUB
+- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+- X: https://x.com/swiftcompanion
+- Resume: https://chibuezefelix.vercel.app/resume.pdf
+
+## Skills
+
+- Mobile: Kotlin, Jetpack Compose, Android SDK, Coroutines and Flow, Flutter, Dart, Java, React Native
+- Payments: EMV contact and contactless, NFC, POS terminal SDKs, card tokenization, ISO 8583, offline queues
+- Backend:Javan Go, Spring Boot, REST, gRPC, PostgreSQL, MySQL Firebase, Docker, Kubernets, KafKa
+- AI: LLM API integration, prompt and tool design, RAG-backed features, on-device inference
+- Practice: clean architecture, MVI/MVVM, modularisation, testing, CI/CD, Play Store releases
+
+## Hiring
+
+Open to senior Android, mobile lead,Java Backend Engineer Banckend, fintech engineering and forward-deployed engineer roles,
+plus contract work on payments integrations and mobile AI features.
