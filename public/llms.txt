@@ -15,8 +15,8 @@ Spring Boot services, and adds LLM-backed features to mobile products.
 
 - Email: YOUR-EMAIL@example.com
 - Website: https://chibuezefelix.vercel.app/
-- GitHub: https://github.com/YOUR-GITHUB
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+- GitHub: https://github.com/chibuezefelix
+- LinkedIn: https://www.linkedin.com/in/chibuezefelix
 - X: https://x.com/swiftcompanion
 - Resume: https://chibuezefelix.vercel.app/resume.pdf
 
