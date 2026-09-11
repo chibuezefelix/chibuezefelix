@@ -24,7 +24,7 @@ Spring Boot services, and adds LLM-backed features to mobile products.
 
 - Mobile: Kotlin, Jetpack Compose, Android SDK, Coroutines and Flow, Flutter, Dart, Java, React Native
 - Payments: EMV contact and contactless, NFC, POS terminal SDKs, card tokenization, ISO 8583, offline queues
-- Backend:Javan Go, Spring Boot, REST, gRPC, PostgreSQL, MySQL Firebase, Docker, Kubernets, KafKa
+- Backend:Java, Go, Spring Boot, REST, gRPC, PostgreSQL, MySQL Firebase, Docker, Kubernetes, KafKa
 - AI: LLM API integration, prompt and tool design, RAG-backed features, on-device inference
 - Practice: clean architecture, MVI/MVVM, modularisation, testing, CI/CD, Play Store releases
 
