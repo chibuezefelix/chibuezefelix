@@ -236,9 +236,45 @@ h2{ font-size:clamp(1.75rem,3.4vw,2.6rem); margin-bottom:1.25rem; }
 /* ============================================================
    5. HERO
    ============================================================ */
+
 .hero .wrap{
-  display:block;
+  display:block; position:relative;
   padding-block:clamp(3.5rem,11vw,8rem) clamp(2.5rem,6vw,4rem);
+}
+/* Magazine layering: portrait sits behind, text runs over the top of it. */
+.hero-figure{
+  position:absolute; z-index:0; margin:0;
+  right:var(--gutter);
+  top:clamp(2rem,7vw,5rem);
+  width:clamp(15rem,34vw,25rem);
+  pointer-events:none;
+  animation:drift 7s ease-in-out infinite alternate;
+}
+.hero-figure img{
+  display:block; width:100%; height:auto;
+  filter:grayscale(1) contrast(1.02);
+  /* fade the left edge so the headline stays readable where it crosses */
+  -webkit-mask-image:linear-gradient(to left,#000 58%,transparent 100%);
+          mask-image:linear-gradient(to left,#000 58%,transparent 100%);
+}
+.hero > .wrap > *:not(.hero-figure){ position:relative; z-index:1; }
+ 
+@keyframes drift{
+  from{ transform:translateY(-6px); }
+  to  { transform:translateY(6px); }
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-figure{ animation:none; }
+}
+/* Small screens: no overlap, portrait sits quietly behind the fact strip area */
+@media (max-width:56rem){
+  .hero-figure{
+    position:static; width:min(18rem,62%); margin:2.5rem 0 0 auto;
+  }
+  .hero-figure img{
+    -webkit-mask-image:linear-gradient(to bottom,#000 70%,transparent 100%);
+            mask-image:linear-gradient(to bottom,#000 70%,transparent 100%);
+  }
 }
 .status{
   display:inline-flex; align-items:center; gap:.6rem;
@@ -247,18 +283,18 @@ h2{ font-size:clamp(1.75rem,3.4vw,2.6rem); margin-bottom:1.25rem; }
 .status::before{
   content:""; width:.55rem; height:.55rem; background:var(--ink); flex:none;
 }
-h1{
+.hero h1{
   font-size:clamp(2.75rem,9.5vw,6.75rem);
   font-weight:800; font-stretch:125%;
   line-height:.94; letter-spacing:-.04em;
-  max-width:16ch; text-wrap:balance;
+  max-width:14ch; text-wrap:balance;
 }
 .hero p{
   margin-top:1.75rem; font-size:clamp(1.0625rem,1.6vw,1.3125rem);
   color:var(--mute); max-width:56ch; line-height:1.5;
 }
 .hero p strong{ color:var(--ink); font-weight:600; }
-
+ 
 .actions{ display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2.5rem; }
 .btn{
   display:inline-flex; align-items:center; gap:.55rem;
@@ -269,7 +305,7 @@ h1{
 .btn-solid{ background:var(--ink); color:var(--paper); }
 .btn-solid:hover{ background:var(--paper); color:var(--ink); }
 .btn-line:hover{ background:var(--surface); }
-
+ 
 /* fact strip */
 .facts{
   display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
@@ -288,6 +324,7 @@ h1{
   .facts div:nth-child(2){ border-right:0; }
   .facts div:nth-child(3),.facts div:nth-child(4){ border-top:1px solid var(--rule); }
 }
+ 
 
 /* ============================================================
    6. PROFILE
@@ -418,19 +455,26 @@ footer a:hover{ color:var(--ink); }
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="top" style="border-top:0">
   <div class="wrap">
-    <p class="status">Open to senior roles and contract work</p>
-
-  <h1>I build payment systems on both sides of the API.</h1>
-
-<p>
-  <strong>Chibueze Felix Anyanwu.</strong> Senior engineer, seven years across Android and
-  backend. Kotlin, Jetpack Compose and Flutter on the client; Go, Java and Spring Boot on
-  the server. Most of that spent on fintech, EMV payments and POS systems, where both ends
-  have to agree or nobody gets paid.
-</p>
-
+    <figure class="hero-figure">
+      <picture>
+        <source srcset="felix.webp" type="image/webp">
+        <img src="felix.jpg" alt="Chibueze Felix Anyanwu" width="640" height="640" fetchpriority="high">
+      </picture>
+    </figure>
+ 
+    <p class="status">Open to senior Android and backend roles</p>
+ 
+    <h1>I build payment systems on both sides of the API.</h1>
+ 
+    <p>
+      <strong>Chibueze Felix Anyanwu.</strong> Senior engineer, seven years across Android and
+      backend. Kotlin, Jetpack Compose and Flutter on the client; Go, Java and Spring Boot on
+      the server. Most of that spent on fintech, EMV payments and POS systems, where both ends
+      have to agree or nobody gets paid.
+    </p>
+ 
     <div class="actions">
-      <a class="btn btn-solid" href="mailto:YOUR-EMAIL@example.com?subject=Hi%20Felix%2C%20I%27d%20like%20to%20hire%20you&amp;body=Hi%20Felix%2C%0A%0AWe%27re%20hiring%20for%3A%20%0ATimeline%3A%20%0AStack%3A%20%0A%0AThanks%2C%0A">
+      <a class="btn btn-solid" href="mailto:felixpresence@example.com?subject=Hi%20Felix%2C%20I%27d%20like%20to%20hire%20you&amp;body=Hi%20Felix%2C%0A%0AWe%27re%20hiring%20for%3A%20%0ATimeline%3A%20%0AStack%3A%20%0A%0AThanks%2C%0A">
         <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="1" y="3" width="14" height="10"/><path d="m1.5 3.5 6.5 5 6.5-5"/>
         </svg>
@@ -443,13 +487,12 @@ footer a:hover{ color:var(--ink); }
         Resume
       </a>
     </div>
-
+ 
     <dl class="facts">
-         <div><dt>Experience</dt><dd>7+ years</dd></div>
-<div><dt>Client</dt><dd>Kotlin, Compose</dd></div>
-<div><dt>Server</dt><dd>Go, Spring Boot</dd></div>
-<div><dt>Availability</dt><dd>Remote, worldwide</dd></div>
-  
+      <div><dt>Experience</dt><dd>7+ years</dd></div>
+      <div><dt>Client</dt><dd>Kotlin, Compose</dd></div>
+      <div><dt>Server</dt><dd>Go, Spring Boot</dd></div>
+      <div><dt>Availability</dt><dd>Remote, worldwide</dd></div>
     </dl>
   </div>
 </section>
