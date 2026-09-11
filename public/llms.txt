@@ -30,5 +30,5 @@ Spring Boot services, and adds LLM-backed features to mobile products.
 
 ## Hiring
 
-Open to senior Android, mobile lead,Java Backend Engineer Banckend, fintech engineering and forward-deployed engineer roles,
+Open to senior Android, mobile lead,Java Backend Engineer, fintech engineering and forward-deployed engineer roles,
 plus contract work on payments integrations and mobile AI features.
