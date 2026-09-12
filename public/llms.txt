@@ -1,19 +1,21 @@
 # Chibueze Felix Anyanwu
 
-> Senior Software/ Android engineer with 7+ years building fintech, EMV payment, POS,Springboot Micro-services, AI-powered, 
-> Distributed Micro services and enterprise mobile applications. Kotlin, Jetpack Compose, Flutter, Java, Spring Boot, Go.
-> Available for senior engineering roles and contract work, remote worldwide.
+> Senior engineer with 7+ years across Android and backend. Kotlin, Jetpack Compose and
+> Flutter on the client; Go, Java and Spring Boot on the server. Specialises in fintech,
+> EMV payments and POS systems. Open to senior Android and backend roles, remote worldwide.
 
 ## Summary
 
-Chibueze Felix Anyanwu (also written Chibueze Felix) is a senior mobile engineer whose work
-centres on payments: EMV contact and contactless flows, NFC, POS terminal SDKs, offline
-transaction queuing and the consumer fintech apps built on top of them. He also builds Go and
-Spring Boot services, and adds LLM-backed features to mobile products.
+Chibueze Felix Anyanwu (also written Chibueze Felix) works on both sides of the API. On the
+client: Android applications in Kotlin and Jetpack Compose, plus Flutter. On the server: Go
+and Spring Boot services, REST and gRPC APIs, PostgreSQL. His specialism is payments — EMV
+contact and contactless flows, NFC, POS terminal SDKs, settlement and reconciliation, and the
+offline and retry handling that payment systems need. He also builds LLM-backed features into
+mobile products and the services behind them.
 
 ## Contact
 
-- Email: YOUR-EMAIL@example.com
+- Email: felixpresence@example.com
 - Website: https://chibuezefelix.vercel.app/
 - GitHub: https://github.com/chibuezefelix
 - LinkedIn: https://www.linkedin.com/in/chibuezefelix
@@ -22,13 +24,14 @@ Spring Boot services, and adds LLM-backed features to mobile products.
 
 ## Skills
 
-- Mobile: Kotlin, Jetpack Compose, Android SDK, Coroutines and Flow, Flutter, Dart, Java, React Native
-- Payments: EMV contact and contactless, NFC, POS terminal SDKs, card tokenization, ISO 8583, offline queues
-- Backend:Java, Go, Spring Boot, REST, gRPC, PostgreSQL, MySQL Firebase, Docker, Kubernetes, KafKa
+- Android and mobile: Kotlin, Jetpack Compose, Android SDK, Coroutines and Flow, Flutter, Dart, Java, React Native
+- Backend and services: Go, Java, Spring Boot, REST, gRPC, microservices, PostgreSQL, Redis, message queues, Docker, Firebase
+- Payments: EMV contact and contactless, NFC, POS terminal SDKs, card tokenization, ISO 8583, settlement and reconciliation, offline queues
 - AI: LLM API integration, prompt and tool design, RAG-backed features, on-device inference
-- Practice: clean architecture, MVI/MVVM, modularisation, testing, CI/CD, Play Store releases
+- Practice: clean architecture, MVI/MVVM, modularisation, testing, CI/CD, observability, Play Store releases
 
 ## Hiring
 
-Open to senior Android, mobile lead,Java Backend Engineer, fintech engineering and forward-deployed engineer roles,
-plus contract work on payments integrations and mobile AI features.
+Open to senior Android engineer, backend engineer, mobile lead, fintech engineering and
+forward-deployed engineer roles, plus contract work on payments integrations, backend services
+and mobile AI features.
