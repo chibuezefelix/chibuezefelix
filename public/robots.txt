@@ -1,12 +1,49 @@
-# https://www.robotstxt.org/robotstxt.html
-#User-agent: *
-#Disallow:
-
-# robots.txt
-# https://yourdomain.com/robots.txt
+# robots.txt — Chibueze Felix Anyanwu
+# Goal: let every search engine and AI answer engine read the whole site.
 
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
+# Search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI answer engines — these are the ones that put you in chat answers.
+# Remove any block you'd rather not be cited by.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://chibuezefelix.vercel.app/sitemap.xml
